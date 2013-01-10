@@ -17,7 +17,8 @@ gem 'kaminari', '~> 0.13'
 group :production do
   # gem 'newrelic_rpm', '~> 3'
   # gem 'dalli', '~> 1'
-  gem 'pg', '~> 0.13'
+  # gem 'pg', '~> 0.13'
+  gem 'sqlite3'
 end
 
 group :development do
@@ -37,7 +38,6 @@ end
 
 group :development, :test do
   gem 'foreman', '~> 0.40'
-  gem 'sqlite3', '~> 1', platform: [:ruby, :mswin, :mingw]
   gem 'faker', '~> 1'
   gem 'factory_girl_rails', '~> 1'
 end
